@@ -184,6 +184,20 @@ Examples are a follows:
 (?<bar>[xzy])\k<bar>   we put the name bar to the group and we reference it later (\k<foo>). The result is the same of the first regex
 ```
 
+### Look-ahead and Look-behind
+Look-ahead and Look-behind (lookaround) are `start and end` zero-length assertions [Anchors](#anchors) but they actually match characters, then ends the match, returning only the result: **Match or No Match**. They do not cosume characters in the string, but only assert wether a match is possible or not. Lookaround allows you to create regular expressions that are impossible to create without them, or that would get very longwinded without them.
+
+Examples of Look-ahead and Look-behind are as follows:
+```
+h(?=t)       matches a h only if is followed by t, but t will not be part of the match
+(?<=t)h      matches a h only if is preceded by an t, but t will not be part of the match
+
+NEGATION OPERATOR
+
+h(?!t)       matches a h only if is not followed by t, but t will not be part of the match
+(?<!t)h      matches a h only if is not preceded by an t, but t will not be part of the match
+
+```
 
 
 ## Author
