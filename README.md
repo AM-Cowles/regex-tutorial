@@ -78,6 +78,27 @@ x(y|z)  matches a string that has x followed by y or z (and captures y or z)
 x[yz]   matches a string that has x, but without capturing b or c
 ```
 
+### Character Classes
+Character Classes (Character Set) tells the regex engine to match only one out serveral specific characters, such as digits, words, or whitespace
+
+Examples of Character Classes are as follows:
+
+* `\d` - matches a single character that is a digit
+* `\w` - matches a word character (any alphanumeric character plus underscore)
+* `\s` - matches a whitespace character (including tabs and line brakes)
+* `.` - matches any character
+* the capital case for any aformentioned characters will inverse the match
+* Examples:
+```
+\d    matches a single any digit 0-9
+\w    matches a single any character that is a-z
+\s    matches ` `
+.     matches any character
+\D    matches a single non-digit character
+\W    matches a single any non-character that is a-z
+\S    matches a single non-` `
+```
+
 
 
 ## Author
