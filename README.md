@@ -144,6 +144,17 @@ Examples of Bracket Expressions are as follows:
 [^a-zA-Z]     a string that has not a letter from a to z or from A to Z
 ```
 
+### Greedy and Lazy Match
+Greedy and/or Lazy Matching are quantifies that expand the match as far as possible through the text. 
+
+Examples of Greedy and/or Lazy Matching are as follows:
+* `* + {}` - any one of these character can be used as a quanitifer for a Greedy or Lazy Match
+* Examples:
+```
+<.+?>     matches any character that is one or more times included inside `<` and `>`, and expands as needed.
+<[^<>]+>  matches any character expects `<` or `>` one or more times included inside `<` and `>`. 
+```
+
 
 
 ## Author
