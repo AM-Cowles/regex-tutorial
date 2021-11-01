@@ -199,7 +199,7 @@ h(?!t)       matches a h only if is not followed by t, but t will not be part of
 
 ```
 
-
 ## Author
+Alyssa Cowles is a student attending a full stack web development coding bootcamp with MSU - Michigan State University.
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Feel free to check out her GitHub repo for all of her previous projects [GitHub Profile](https://github.com/AM-Cowles)
