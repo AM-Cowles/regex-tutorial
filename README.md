@@ -155,6 +155,24 @@ Examples of Greedy and/or Lazy Matching are as follows:
 <[^<>]+>  matches any character expects `<` or `>` one or more times included inside `<` and `>`. 
 ```
 
+### Boundaries
+Not to be confused with actual characters, simply put, Boundaries are the places between characters. A Boundary should be thought of as a wall between any adjacent characters.
+There are two types of Boundaries, **Word** and ***Non-Word**, each denoted by a specific character. 
+
+Examples of Boundaries are as follows:
+* `\b` - A position that bounds a word, or where a word starts or ends. It denotes a place between a word and non-word character, at the start and end of a string.
+* `\B` - Exact opposite of a word boundary, the negation of `\b` and will match **any position a word boundary doesnt.** *
+* `*`Will match between a word and word character, as well as between a non-word and non-word character.
+* Examples of Boundaries are as follows:
+```
+`Hello World` has 12 total Boundaries with 8 Word Boundaries as seen below:
+|H|e|l|l|o| |W|o|r|l|d|
+^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+N W W W W N N W W W W N  -  N = Nonword Boundary \ W = Word Boundary
+\bxyz\b     matches a "whole words only search" for the string `xyz`
+\Bxyz\B     matches only if the pattern is fully surrounded by word characters `txyzt` would match the string `xyz` because it only has word boundaries
+```
+
 
 
 ## Author
