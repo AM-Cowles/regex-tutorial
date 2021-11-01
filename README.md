@@ -16,12 +16,15 @@ Regular expressions can also be used from the command line and within text-edito
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [Grouping Constructs](#grouping-constructs)
-- [Bracket Expressions](#bracket-expressions)
+- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
 - [Flags](#flags)
-- [Character Escapes](#character-escapes)
+- [Grouping and Capturing](#grouping-and-capturing)
+- [Bracket Expressions](#bracket-expressions)
+- [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Boundaries](#boundaries)
+- [Back-references](#back-references)
+- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
