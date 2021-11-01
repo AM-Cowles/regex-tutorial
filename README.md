@@ -173,6 +173,17 @@ N W W W W N N W W W W N  -  N = Nonword Boundary \ W = Word Boundary
 \Bxyz\B     matches only if the pattern is fully surrounded by word characters `txyzt` would match the string `xyz` because it only has word boundaries
 ```
 
+### Back-references
+When using Grouping (look above) you may Capture the Group, which is saved in memory for later use. Backreferencing is the name given to the action of using these matches. 
+Backreferencing is the refernce of a captured match, save in memory, by a captured group.
+
+Examples are a follows:
+```
+([xyz])\1              using \1 it matches the same text that was matched by the first capturing group
+([uwx])([yz])\2\1      we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) capturing group
+(?<bar>[xzy])\k<bar>   we put the name bar to the group and we reference it later (\k<foo>). The result is the same of the first regex
+```
+
 
 
 ## Author
