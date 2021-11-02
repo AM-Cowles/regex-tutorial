@@ -1,4 +1,4 @@
-# Regex Tutorial (Regex Tutorial)
+# Regex Tutorial (Regular Expression Tutorial)
 
 Introductory paragraph (In this tutorial, we will be taking a brief look into what Regex (regular expressions) are and how they work. While regular expressions seem to be overwhelming at first, just like with any language, they can be broken down into their most simple parts and more easily understood.)
 
